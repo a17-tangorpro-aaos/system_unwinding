@@ -154,7 +154,7 @@ cc_library {
     double_loadable: true,
     defaults: [
         "libunwindstack_defaults",
-        "rust_static_std", // for rustc_demangle_static
+        "rust_static_std", // for rustc_demangle_static (Deprecated in A17)
     ],
     srcs: [
         "DexFile.cpp",
@@ -239,7 +239,7 @@ cc_library_static {
     name: "libunwindstack_demangle",
     defaults: [
         "libunwindstack_flags",
-        "rust_static_std", // for rustc_demangle_static
+        "rust_static_std", // for rustc_demangle_static (Deprecated in A17)
     ],
     vendor_available: true,
 
@@ -265,7 +265,7 @@ cc_library_static {
     name: "libunwindstack_stdout_log",
     defaults: [
         "libunwindstack_defaults",
-        "rust_static_std", // for rustc_demangle_static
+        "rust_static_std", // for rustc_demangle_static (Deprecated in A17)
     ],
     srcs: [
         "LogStdout.cpp",
@@ -294,7 +294,7 @@ cc_library_static {
     vendor_ramdisk_available: true,
     defaults: [
         "libunwindstack_defaults",
-        "rust_static_std", // for rustc_demangle_static
+        "rust_static_std", // for rustc_demangle_static (Deprecated in A17)
     ],
     srcs: ["LogAndroid.cpp"],
 
